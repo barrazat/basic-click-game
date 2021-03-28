@@ -15,6 +15,7 @@ header{
     display: flex;
     align-items: center;
     font-size: 30px;
+    user-select: none; 
 }
 
 h1{
@@ -56,6 +57,7 @@ main{
     align-items: center;
     font-size: 30px;
     color: #E8175D;
+    user-select: none; 
 }
 
 .function{
@@ -73,6 +75,7 @@ main{
     box-shadow: 0px 0px 11px 0px rgba(0,0,0,0.13);
     display: block;
     align-items: center;
+    user-select: none; 
 }
 
 .title{
@@ -88,19 +91,21 @@ main{
 }
 
 .btn{
+    width: 95%;
     margin: 0 auto;
     display: flex;
     align-items: center;
-    height: 60%;
+    height: 30%;
+    user-select: none; 
 }
 
 .button{
     display: flex;
     align-items: center;
     margin: 0 auto;
-    width: 17%;
-    height: 25%;
-    background-color: #474747;
+    width: 15%;
+    height: 40%;
+    background-color: rgba(0, 0, 0, 0);
     border: 2px solid #E8175D;
     border-radius: 20px;
     color: #A8A7A7;
@@ -108,6 +113,29 @@ main{
     text-decoration: none;
     cursor: pointer;
     font-size: 20px;
+    z-index: 1;
+    user-select: none; 
+}
+
+.clickEffect{
+	position: fixed;
+    background-image: url("../img/2.gif");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 50px;
+	animation:clickEffect 2s ease-out;
+}
+
+@keyframes clickEffect{
+	0%{
+		opacity:1;
+		width:50px; height:50px;
+        margin-top: 0px;
+	}
+	100%{
+		opacity: 0;
+		margin-top: -450px;
+	}
 }
 
 p{
